@@ -29,13 +29,13 @@ main h1 {
 
 picture {
     display: block;
-    max-width: 100%;
     text-align: center;
     margin-bottom: 30px;
 }
 
 picture img {
     max-width: 521px;
+    width: 100%;
     height: auto;
     padding: 10px;
     background-color: #fff;
