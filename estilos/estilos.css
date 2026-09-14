@@ -1,26 +1,36 @@
+:root {
+    --cor-primaria: darkblue;
+    --cor-do-texto-titulo: var(--cor-primaria);
+    --fonte-do-texto-titulo: 'Arial', sans-serif;
+    --padding: 1rem;
+    --padding-img: 2px;
+    --border: 1px solid rgb(0 0 0 / 0.2);
+}
+
 * {
     box-sizing: border-box;
 }
 
 nav {
-    background-color: darkblue;
-    padding: 10px;
+    background-color: var(--cor-primaria);
+    padding: var(--padding);
 }
 
 nav a {
     color: white;
     display: block;
-    padding: 20px;
+    padding: var(--padding);
 }
 
 h1 {
-    color: darkblue;
+    color: var(--cor-do-texto-titulo);
+    font-family: var(--fonte-do-texto-titulo);
 }
 
 img {
     width: 150px;
     height: auto;
-    border: 1px solid black;
+    border: var(--border);
     box-shadow: 0 0 30px gray;
 }
 
@@ -35,16 +45,16 @@ main {
 main img {
     width: 150px;
     height: auto;
-    border: 1px solid rgb(0 0 0 / 0.2);
-    padding: 2px;
+    border: var(--border);
+    padding: var(--padding-img);
     box-shadow: 0 0 30px gray;
 }
 
 aside {
     max-width: 20rem;
     margin: 1rem;
-    border: 1px solid rgb(0 0 0 / 0.2);
-    padding: 1rem;
+    border: var(--border);
+    padding: var(--padding);
     background-color: #eee;
     color: #333;
     text-align: center;
