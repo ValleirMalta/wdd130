@@ -1,3 +1,10 @@
+/* Resetar CS do meu css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 :root {
     --cor-primaria: darkblue;
     --cor-do-texto-titulo: var(--cor-primaria);
@@ -6,11 +13,6 @@
     --padding-img: 2px;
     --border: 1px solid rgb(0 0 0 / 0.2);
 }
-
-* {
-    box-sizing: border-box;
-}
-
 nav {
     background-color: var(--cor-primaria);
     padding: var(--padding);
@@ -39,25 +41,29 @@ p {
 }
 
 main {
+    position: relative;
     max-width: 840px;
+    padding: var(--padding);
 }
-
 main img {
     width: 150px;
     height: auto;
-    border: var(--border);
     padding: var(--padding-img);
-    box-shadow: 0 0 30px gray;
+    float: right;
+    margin-left: 30px;
+    margin-bottom: 30px;
 }
 
 aside {
-    max-width: 20rem;
-    margin: 1rem;
-    border: var(--border);
-    padding: var(--padding);
-    background-color: #eee;
-    color: #333;
+    width: 20em;
     text-align: center;
+    position: relative;
+}
+
+aside h2 {
+  position: absolute;
+  top: 110px;
+  left: 70px;
 }
 
 aside img {
@@ -67,6 +73,19 @@ aside img {
 
 footer {
     margin-top: 30px;
-    border-top: 1px solid #000;
     text-align: center;
+}
+
+/* Seletores de Classe  */
+
+.caixa {
+    margin: 1rem;
+    border:  var(--border);
+    padding: 1rem;
+    background-color: #eee;
+    color: #000;
+    clear: both;
+}
+.identacao {
+    padding-left: 2rem;
 }
