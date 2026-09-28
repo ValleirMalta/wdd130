@@ -13,20 +13,36 @@
     --padding-img: 2px;
     --border: 1px solid rgb(0 0 0 / 0.2);
 }
+header, footer, .grid {
+    max-width: 840px;
+    margin: 0 auto;
+}
+.grid {
+    display: grid;
+    align-items: center;
+}
 nav {
-    background-color: var(--cor-primaria);
+    background-color: steelblue;
     padding: var(--padding);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 nav a {
-    color: white;
     display: block;
-    padding: var(--padding);
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff;
 }
 
 h1 {
     color: var(--cor-do-texto-titulo);
     font-family: var(--fonte-do-texto-titulo);
+    border-bottom: var(--border);
+    margin-bottom: 1rem;
 }
 
 img {
@@ -42,8 +58,8 @@ p {
 
 main {
     position: relative;
-    max-width: 840px;
     padding: var(--padding);
+    grid-column: 2 / 3;
 }
 main img {
     width: 150px;
@@ -58,6 +74,8 @@ aside {
     width: 20em;
     text-align: center;
     position: relative;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
 }
 
 aside h2 {
