@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valleir Malta | WDD 130 - WWR Fale Conosco</title>  
+    <meta name="description" content="Entre em contato conosco e descubra mais sobre nossas experiências de rafting.">
+    <meta name="author" content="Valleir Malta Rocha">
+    <link rel="stylesheet" href="estilos/rafting.css">
+</head>
+
+<body>
+    <header>
+        <img src="imagens/logo.png" alt="Logo Corredeiras" width="150">
+        <nav>
+            <a href="index.html">Página Inicial</a>
+            <a href="sobre.html">Sobre Nós</a>
+            <a href="passeios.html">Passeios</a>
+            <a href="contato.html">Fale Conosco</a>
+        </nav>
+    </header>
+    <main>
+        <div class="hero-contact">
+            <h1>Companhia de Rafting em Corredeiras</h1>
+            <p>123 Rua Principal do Rio, Foz do Iguaçu, Paraná</p>
+            <p>Telefone: +55 45 99999-9999 | E-mail: info@correiras.com</p>
+        </div>
+        <section class="contact-grid">
+      <!-- Mapa do Google Incorporado sem CSS inline style="border:0" -->
+      <div class="map-container">
+        <h2>Nossa Localização</h2>
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3600.080512165039!2d-54.5854!3d-25.5478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjXCsDMyJzUyLjEiUyA1NMKwMzUnMDcuNCJX!5e0!3m2!1spt-BR!2sbr!4v1600000000000!5m2!1spt-BR!2sbr" 
+          width="600" 
+          height="450" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Mapa com a localização da Companhia de Rafting em Corredeiras">
+        </iframe>
+      </div>
+
+      <!-- Formulário de Contato -->
+      <form action="#" method="post" class="contact-form">
+        <h2>Envie uma Mensagem</h2>
+
+        <div class="form-item">
+          <label for="username">Nome:</label>
+          <input type="text" id="username" name="username" placeholder="Digite aqui" required>
+        </div>
+
+        <div class="form-item">
+          <label for="useremail">E-mail:</label>
+          <input type="email" id="useremail" name="useremail" placeholder="Digite aqui" required>
+        </div>
+
+        <fieldset class="radio-group">
+          <legend>Propósito da Mensagem:</legend>
+          <label>
+            <input type="radio" id="general" name="purpose" value="general" checked>
+            Consulta Geral
+          </label>
+          <label>
+            <input type="radio" id="reservation" name="purpose" value="reservation">
+            Pergunta sobre Reserva
+          </label>
+          <label>
+            <input type="radio" id="suggestion" name="purpose" value="suggestion">
+            Sugestão de Site
+          </label>
+        </fieldset>
+
+        <div class="form-item">
+          <label for="message">Mensagem:</label>
+          <textarea id="message" name="message" rows="5" placeholder="Digite aqui" required></textarea>
+        </div>
+
+        <div class="form-item checkbox-item">
+          <label for="newsletter">
+            <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+            Quero receber a newsletter mensal
+          </label>
+        </div>
+
+        <button type="submit" class="submit-btn">Entrar em Contato!</button>
+      </form>
+    </section>
+    
+    <section class="time-section">
+      <h2>Estamos Aqui para Serví-lo</h2>
+      <div class="time-grid">
+        <figure>
+          <img src="imagens/funcionario.png" alt="Foto de Carlos Silva">
+          <figcaption>
+            <strong>Carlos Silva</strong><br>
+            Guia Principal de Rafting
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="imagens/funcionario.png" alt="Foto de Mariana Souza">
+          <figcaption>
+            <strong>Mariana Souza</strong><br>
+            Gerente de Reservas
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="imagens/funcionario.png" alt="Foto de Pedro Santos">
+          <figcaption>
+            <strong>Pedro Santos</strong><br>
+            Coordenador de Segurança
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+
+    </main>
+    <footer>
+        <p>© 2026 🖥️ Corredeiras - Rafting Aventura 🖥️ Valleir Malta Rocha 🖥️ Porto Velho, RO</p>
+        <nav class="socialmedia">
+            <a href="https://facebook.com">
+                <img src="imagens/facebook.png" alt="Ícone do Facebook">
+            </a>
+            <a href="https://linkedin.com">
+                <img src="imagens/linkedin.png" alt="Ícone do LinkedIn">
+            </a>
+            <a href="https://instagram.com">
+                <img src="imagens/instagram.png" alt="Ícone do Instagram">
+            </a>
+        </nav>
+    </footer>
+
+</body>
+
+</html>
