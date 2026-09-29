@@ -234,7 +234,7 @@ footer .redes-sociais img {
     }
 }
 
-/* ===== Página de Contato ===== */
+/* ===== Página de Contacto ===== */
 
 .hero-contato {
     text-align: center;
@@ -257,7 +257,7 @@ footer .redes-sociais img {
 .container-mapa iframe {
     width: 100%;
     height: 380px;
-    border: 1px solid var(--cor-borda-suave);
+    border: none;
     border-radius: 8px;
 }
 
