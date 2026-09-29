@@ -8,7 +8,7 @@
 :root {
     --cor-primaria: #d01c21; 
     --cor-secundaria: #0075c9;
-    --cor-destaque1: #0000007f;
+    --cor-destaque1: #111111;
     --cor-destaque2: #62c3f0;
     --cor-fundo-cartao: #ffffffb8;
     --cor-fundo-galeria: #e0e0e0;
@@ -18,6 +18,7 @@
     --cor-texto-escuro: #111111;
     --cor-texto-medio: #333333;
     --cor-branca: #ffffff;
+    
     --cor-fundo-form: #f9f9f9;
     --cor-borda-suave: #cccccc;
     --cor-borda-input: #767676;
@@ -235,17 +236,17 @@ footer .redes-sociais img {
 
 /* ===== Página de Contato ===== */
 
-.hero-contact {
+.hero-contato {
     text-align: center;
     margin: 2rem 0;
 }
 
-.hero-contact h1 {
+.hero-contato h1 {
     font-size: 2.2rem;
     margin-bottom: 0.5rem;
 }
 
-.contact-grid {
+.grid-contato {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 2rem;
@@ -253,14 +254,14 @@ footer .redes-sociais img {
     align-items: start;
 }
 
-.map-container iframe {
+.container-mapa iframe {
     width: 100%;
     height: 380px;
     border: 1px solid var(--cor-borda-suave);
     border-radius: 8px;
 }
 
-.contact-form {
+.formulario-contato {
     display: flex;
     flex-direction: column;
     gap: 1.2rem;
@@ -270,22 +271,22 @@ footer .redes-sociais img {
     border: 1px solid var(--cor-borda-suave);
 }
 
-.form-item {
+.campo-form {
     display: flex;
     flex-direction: column;
     gap: 0.4rem;
 }
 
-.form-item input[type="text"],
-.form-item input[type="email"],
-.form-item textarea {
+.campo-form input[type="text"],
+.campo-form input[type="email"],
+.campo-form textarea {
     padding: 0.6rem;
     border: 1px solid var(--cor-borda-input);
     border-radius: 4px;
     font-size: 1rem;
 }
 
-.radio-group {
+.grupo-radio {
     border: 1px solid var(--cor-borda-suave);
     padding: 1rem;
     border-radius: 4px;
@@ -294,19 +295,19 @@ footer .redes-sociais img {
     gap: 0.5rem;
 }
 
-.radio-group legend {
+.grupo-radio legend {
     font-weight: bold;
     padding: 0 0.4rem;
 }
 
-.checkbox-item label {
+.campo-checkbox label {
     display: flex;
     align-items: center;
     gap: 0.5rem;
     cursor: pointer;
 }
 
-.submit-btn {
+.botao-enviar {
     background-color: var(--cor-botao-submit);
     color: var(--cor-branca);
     font-size: 1.1rem;
@@ -318,24 +319,24 @@ footer .redes-sociais img {
     transition: background-color 0.3s ease;
 }
 
-.submit-btn:hover,
-.submit-btn:focus {
+.botao-enviar:hover,
+.botao-enviar:focus {
     background-color: var(--cor-botao-submit-hover);
 }
 
-.time-section {
+.secao-equipe {
     text-align: center;
     margin: 3rem 0;
 }
 
-.time-grid {
+.grid-equipe {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 1.5rem;
     margin-top: 1.5rem;
 }
 
-.time-grid figure {
+.grid-equipe figure {
     margin: 0;
     background-color: var(--cor-branca);
     border: 1px solid var(--cor-borda-suave);
@@ -344,14 +345,14 @@ footer .redes-sociais img {
     box-shadow: 0 2px 5px var(--cor-sombra-suave);
 }
 
-.time-grid img {
+.grid-equipe img {
     width: 100%;
     height: 150px;
     object-fit: cover;
     border-radius: 6px;
 }
 
-.time-grid figcaption {
+.grid-equipe figcaption {
     margin-top: 0.8rem;
     font-size: 0.95rem;
 }
